@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="great blog about Gabriel Garcia Marquez">
+    <meta name="keywords" content="web design blog, web dev blog, gabriel garcia marquez, writer, books">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="app.js" defer></script>
+    <title>Gabriel Garcia Marquez</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="display-1 text-center text-danger">Gabriel Garcia Marquez</h1>
+        </header>
+        <section>
+            <article>
+                <h2 class="text-primary">Life</h2>
+                <p>Gabriel Garcia Marquez was born in Aracataca, Colombia. As a 13-year-old, he came to Bogotá to study
+                    in a
+                    secondary school. Later he began to study law, but abandoned these studies to work as a journalist
+                    and
+                    writer. During the 1950s and 1960s, he worked as a foreign correspondent in Paris, New York and
+                    elsewhere. In the late 1960s he left journalism to devote himself to his creative writing full-time.
+                    Eventually <span style="color: red;">García Márquez</span> settled in Mexico City, where he lived
+                    until
+                    his death.</p>
+                <p>If you want to reach out more information about his life you can click <a
+                        href="https://en.wikipedia.org/wiki/Gabriel_Garc%C3%ADa_M%C3%A1rquez" target="_blank">here</a>
+                </p>
+            </article>
+
+            <article>
+                <h2 class="text-primary">Gabriel Garcia Marquez Books In Order</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        
+                        <h3 class="text-success">Standalone Novels In Publication Order</h3>
+                        <ol>
+                            <li>One Hundred Years of Solitude (1967)</li>
+                            <li>In Evil Hour (1968)</li>
+                            <li>The Autumn Of The Patriarch (1976)</li>
+                            <li>Chronicle of a Death Foretold (1981)</li>
+                            <li>The Fragrance of the Guava (1982)</li>
+                            <li>Love in the Time of Cholera (1985)</li>
+                            <li>The Story of a Shipwrecked Sailor (1986)</li>
+                            <li>The General in His Labyrinth (1989)</li>
+                            <li>News of a Kidnapping (1996)</li>
+                            <li>Memories of My Melancholy Who*res (2004)</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="text-success">Short Stories/Novellas In Publication Order</h3>
+                        <ol>
+                            <li>A Very Old Man with Enormous Wings (1968)</li>
+                        </ol>
+                        <h3 class="text-success">Non-Fiction Books In Publication Order</h3>
+                        <ol>
+                            <li>Clandestine in Chile (1986)</li>
+                            <li>A Country for Children (1996)</li>
+                            <li>Living to Tell the Tale (2002)</li>
+                            <li>Torrijos (2007)</li>
+                            <li>I’m Not Here to Give a Speech (2010)</li>
+                            <li>Gabriel García Márquez (2015)</li>
+                            <li>The Scandal of the Century (2019)</li>
+                        </ol>
+                    </div>
+                </div>
+
+
+            </article>
+            <hr>
+            <article>
+                <h3 class="text-success">My Favorite Books and Information about them</h3>
+                <div id="yourFav" class="text-success">Would you like to add one of your favorite book of Marquez Gabriel?</div>
+                <div class="row my-3" >
+                    <input type="text" name="yourFavName" class="inputs col-4 me-3 ms-3" placeholder="Book Name">
+                    <input type="text" name="yourFavPage" class="inputs col-1 me-3" placeholder="Book Page">
+                    <input type="text" name="yourFavScore" class="inputs col-1" placeholder="Book Score">
+                </div>
+                
+                <input type="button" value="Add" id="yourFavBtn">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Page</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>One Hundred Years of Solitude</td>
+                            <td>464</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>The General in His Labyrinth</td>
+                            <td>256</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>Love in the Time of Cholera</td>
+                            <td>196</td>
+                            <td>10</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </article>
+        </section>
+        <div class="mt-5"></div>
+        <h3 class="text-secondary">FORM</h3>
+        <form action="process.php" method="POST">
+            <div class="form-group">
+                <label class="form-label" for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="first" placeholder="Enter your first name" class="form-control">
+            </div>
+            <div class="form-group mt-3">
+                <label class="form-label" for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Enter your last name"
+                    class="form-control">
+            </div>
+
+            <label class="mt-3">Gender: </label>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1">
+                <label class="form-check-label" for="inlineRadio1">Female</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
+                <label class="form-check-label" for="inlineRadio2">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                    value="option3">
+                <label class="form-check-label" for="inlineRadio3">Other</label>
+            </div>
+
+
+            <div class="mt-3">
+                <select class="form-select" aria-label="Default select example">
+                    <option>Country</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="The Netherlands">The Netherlands</option>
+                    <option value="Syria">Syria</option>
+                </select>
+
+            </div>
+            <div class="mt-3">
+                <input type="submit" value="Submit" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
